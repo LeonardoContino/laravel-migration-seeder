@@ -31,9 +31,9 @@ class TrainSeeder extends Seeder
             $train->azienda = $faker->company();
             $train->stazione_partenza = $faker->city();
             $train->stazione_arrivo = $faker->city();
-            $train->code = $faker->randomNumber(5, true);
+            $train->code = $faker->randomNumber(4, true);
             $train->number_carriage = $faker->randomNumber(4, true);
-            $train->time = $faker->randomNumber(5, true);
+            $train->time = $faker->dateTime();
             $train->delete = $faker->boolean();
             $train->save();
 

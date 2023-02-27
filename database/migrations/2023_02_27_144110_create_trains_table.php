@@ -28,8 +28,8 @@ return new class extends Migration
             $table->string('stazione_partenza', 30);
             $table->string('stazione_arrivo', 30);
             $table->smallInteger('code')->unsigned();
-            $table->tinyInteger('number_carriage');
-            $table->boolean('time')->default(1);
+            $table->smallInteger('number_carriage');
+            $table->date('time');
             $table->boolean('delete')->default(0);
             $table->timestamps();
         });
