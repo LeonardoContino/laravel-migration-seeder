@@ -37,10 +37,6 @@ class TrainSeeder extends Seeder
             $train->delete = $faker->boolean();
             $train->save();
 
-
-
-
-
         }
     }
 }
